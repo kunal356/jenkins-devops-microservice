@@ -1,6 +1,28 @@
 // SCRIPTED (OLD WAY):
-node {
-	echo "Build"
-	echo "Test"
-	echo "IntegrationTest"
+// node {
+// 	echo "Build"
+// 	echo "Test"
+// 	echo "IntegrationTest"
+// }
+
+// DECLARATIVE (NEW WAY):
+pipeline {
+	agent any
+	stages{
+		stage('Build') {
+			steps {
+				echo "Build"
+			}
+		}
+		stage('Test') {
+			steps {
+				echo "Test"
+			}
+		}
+		stage('Integration Test') {
+			steps {
+				echo "Integration Test"
+			}
+		}
+	}
 }
