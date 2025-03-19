@@ -151,7 +151,7 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>${surefire.version}</version>
                 <configuration>
-                    <argLine>${jacoco.utAgentConfig} -Djacoco.exclClassLoaders=java.*,javax.*,sun.*,com.sun.*</argLine>
+                    <argLine>${jacoco.utAgentConfig}</argLine>
                     <excludes>
                         <exclude>**/RunCucumberIntegrationTestCase.java</exclude>
                     </excludes>
@@ -168,7 +168,6 @@
                 <artifactId>maven-failsafe-plugin</artifactId>
                 <version>${failsafe.version}</version>
                 <configuration>
-                    <argLine>${jacoco.itAgentConfig} -Djacoco.exclClassLoaders=java.*,javax.*,sun.*,com.sun.*</argLine>
                     <includes>
                         <include>**/*CucumberIntegrationTestCase.java</include>
                     </includes>
