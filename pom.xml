@@ -121,10 +121,10 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>org.codehaus.groovy</groupId>
-            <artifactId>groovy</artifactId>
-            <version>4.0.21</version> <!-- Latest version -->
-        </dependency>
+			<groupId>org.apache.groovy</groupId>
+			<artifactId>groovy</artifactId>
+			<version>4.0.26</version>
+		</dependency>
     </dependencies>
 
     <dependencyManagement>
